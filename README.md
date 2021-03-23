@@ -2,14 +2,13 @@
 Práctica 1 de la asignatura Tipología y ciclo de vida de los datos de la universidad UOC desarrollada en el segundo semestre del curso 20/21.
 El objetivo de esta actividad será la creación de un dataset a partir de los datos contenidos en una web. Para su realización, se deben cumplir los siguientes puntos:
 
-## 1. Contexto. Explicar en qué contexto se ha recolectado la información. Explique por qué el sitio web elegido proporciona dicha información.
+### 1. Contexto. Explicar en qué contexto se ha recolectado la información. Explique por qué el sitio web elegido proporciona dicha información.
 
-## 2. Definir un título para el dataset. Elegir un título que sea descriptivo.
+### 2. Definir un título para el dataset. Elegir un título que sea descriptivo.
 
 ## 3. Descripción del dataset. Desarrollar una descripción breve del conjunto de datos que se ha extraído (es necesario que esta descripción tenga sentido con el título elegido).
 
-## 4. Representación gráfica. Presentar esquema o diagrama que identifique el
-dataset visualmente y el proyecto elegido
+## 4. Representación gráfica. Presentar esquema o diagrama que identifique el dataset visualmente y el proyecto elegido
 
 ## 5. Contenido. Explicar los campos que incluye el dataset, el periodo de tiempo de los datos y cómo se ha recogido.
 
