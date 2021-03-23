@@ -1,6 +1,7 @@
 # PRA1-TCVD
-Práctica 1 de la asignatura Tipología y ciclo de vida de los datos de la universidad UOC desarrollada en el segundo semestre del curso 20/21.
-El objetivo de esta actividad será la creación de un dataset a partir de los datos contenidos en una web. Para su realización, se deben cumplir los siguientes puntos:
+
+### Práctica 1 de la asignatura Tipología y ciclo de vida de los datos de la universidad UOC desarrollada en el segundo semestre del curso 20/21.
+### El objetivo de esta actividad será la creación de un dataset a partir de los datos contenidos en una web. Para su realización, se deben cumplir los siguientes puntos:
 
 ### 1. Contexto. Explicar en qué contexto se ha recolectado la información. Explique por qué el sitio web elegido proporciona dicha información.
 
