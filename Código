@@ -1,1 +1,47 @@
-import request
+# Importación de paquetes necesarios
+import os         #Para crear directorios, archivos, etc
+import requests   #Para requests http
+import csv        #Tratamiento csv
+import argparse   #Para pedir entrada de argumentos por consola
+from datetime import datetime
+from datetime import timedelta
+from bs4 import BeautifulSoup   #Para extraer datos de archivos HTML y XML
+
+
+# Entrada de argumentos. Strart Year y endYear, irán como parámetros en la función creaCsv
+parser = argparse.ArgumentParser()
+parser.add_argument("--startYear", help="Introduce el año desde el que quieres visualizar los premios. Del 2010 en adelante...")
+parser.add_argument("--endYear", help="Introduce el año hasta el que quieres visualizar los premios. Máximo hasta 2020")
+args = parser.parse_args()
+
+
+# La siguiente función ejecuta una pregunta de años sobre los que quieres hacer consulta de premios y se genera un csv con los premios de los años indicados
+def creaCsv(año_inicio, año_fin):
+
+  # Parámetros inamovibles para la función:
+  peliculasPremiadas=[]                                                                                     #Lista a rellenar de películas premiadas
+  headerCsv=["País película","Nombre Película","Evento/Premio","País Evento/Premio", "Año Evento/Premio"]   #Cabecera de la lista
+  peliculasPremiadas.append(headerCsv)                                                                      #Añadimos cabecera
+  url_partida = "https://www.filmaffinity.com/es/best_2020.php"   #Desde esta parte de la web es donde nos debemos situar para hacer la consulta a los distintos años
+  currentDir = os.path.dirname(__file__)
+  filename = "Premios.csv"                                        #Nombre del csv que se generará
+  filePath = os.path.join(currentDir, filename)                   #Lo guardamos en la carpeta actual
+  
+  # Tenemos que rellenar el cuerpo de la fución en la que rellenamos peliculasPremiadas según los años entrados en la función....
+  
+  # Escritura de datos de PeliculasPremiadas a nuestro csv Premios.csv
+  with open(filePath, 'w', newline='') as csvFile:
+    writer = csv.writer(csvFile)
+    for pelicula_Premiada in peliculasPremiadas:
+      writer.writerow(pelicula_Premiada)
+  
+  return
+
+
+# Introducción de fechas de consulta
+año_inicio = datetime.strptime(args.startYear, "%Y")
+año_fin = datetime.strptime(args.endYear,"%Y")
+
+
+# Ejecución de función
+creaCsv(año_inicio, año_fin)
